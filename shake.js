@@ -13,7 +13,7 @@ function activateMainLoop(){
   mainLoopID = setInterval(function () {
     window.document.body.style.backgroundColor = 'white';
     play('shake-4');
-  }, 500);
+  }, 100);
 }
 
 function ping() {
