@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
   var t1 = new Date().getTime();
-  
+
   function ping() {
     var t2 = new Date().getTime();
     var value = t2 - t1
@@ -20,7 +20,7 @@
 
     t1 = t2;
   };
-  
+
   if (typeof window.DeviceMotionEvent != 'undefined') {
       var sensitivity = 30;
       var x1 = 0, y1 = 0, z1 = 0, x2 = 0, y2 = 0, z2 = 0;
@@ -42,8 +42,13 @@
         y2 = y1;
         z2 = z1;
       }, 40);
+
+      setInterval(function () {
+        window.document.body.style.backgroundColor = 'white';
+      }, 1000);
+
   };
 </script>
-  
+
 </body>
 </html>
