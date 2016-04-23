@@ -18,10 +18,11 @@ ion.sound({
 });
 
 setInterval(function () {
+  console.log(mainLoopID);
   if(mainLoopID === undefined){
     activateMainLoop();
   }
-}, 1000);
+}, 1500);
 
 function play(fileName){
   if(audioCache[fileName] === undefined){
@@ -36,7 +37,7 @@ function activateMainLoop(){
   mainLoopID = setInterval(function () {
     window.document.body.style.backgroundColor = 'white';
     ion.sound.play("shake-4");
-  }, 100);
+  }, 200);
 }
 
 function ping() {
