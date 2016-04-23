@@ -18,7 +18,7 @@ ion.sound({
 });
 
 setInterval(function () {
-  if(mainLoopID === null){
+  if(mainLoopID === undefined){
     activateMainLoop();
   }
 }, 1000);
