@@ -61,7 +61,6 @@ function ping() {
   // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
 
   t1 = t2;
-  activateMainLoop();
 };
 
 //activateMainLoop();
