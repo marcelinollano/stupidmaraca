@@ -32,7 +32,7 @@ function play(fileName){
 
 function activateMainLoop(){
   $maraca.removeClass("shake-stop");
-  $maraca.addClass("shake-hard");
+  $maraca.addClass("shake-slow");
   mainLoopID = setInterval(function () {
     window.document.body.style.backgroundColor = 'white';
     ion.sound.play("shake-4");
@@ -54,7 +54,7 @@ function ping() {
     // window.document.body.style.backgroundColor = 'yellow';
     ion.sound.play("shake-1");
     $maraca.addClass("shake-stop");
-    $maraca.removeClass("shake-hard");
+    $maraca.removeClass("shake-slow");
   }
 
   // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
