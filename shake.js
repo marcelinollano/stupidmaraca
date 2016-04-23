@@ -9,8 +9,14 @@ function ping() {
   var t2 = new Date().getTime();
   var value = t2 - t1
 
-  if (value > 400) { window.document.body.style.backgroundColor = 'white'; }
-  if (value > 150 && value < 400)  { window.document.body.style.backgroundColor = 'yellow'; }
+  if (value > 400) {
+    window.document.body.style.backgroundColor = 'white';
+    play('shake-1');
+  }
+  if (value > 150 && value < 400)  {
+    window.document.body.style.backgroundColor = 'yellow';
+    play('shake-4');
+  }
   if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
 
   t1 = t2;
@@ -40,6 +46,7 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
 
     setInterval(function () {
       window.document.body.style.backgroundColor = 'white';
+      play('shake-1');
     }, 1000);
 
 };
