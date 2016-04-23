@@ -18,8 +18,7 @@ ion.sound({
 });
 
 setInterval(function () {
-  console.log(mainLoopID);
-  if(mainLoopID === undefined){
+  if(mainLoopID === 0){
     activateMainLoop();
   }
 }, 1500);
@@ -36,7 +35,7 @@ function activateMainLoop(){
   $maraca.removeClass("shake-stop");
   $maraca.addClass("shake-slow");
   mainLoopID = setInterval(function () {
-    window.document.body.style.backgroundColor = 'white';
+    //window.document.body.style.backgroundColor = 'white';
     ion.sound.play("shake-4");
   }, 200);
 }
@@ -46,7 +45,7 @@ function ping() {
   var value = t2 - t1;
 
   window.clearTimeout(mainLoopID);
-  mainLoopID = undefined;
+  mainLoopID = 0;
 
   if (value > 400) {
     //window.document.body.style.backgroundColor = 'white';
