@@ -47,17 +47,17 @@ function ping() {
   window.clearTimeout(mainLoopID);
   mainLoopID = 0;
 
-  if (value > 400) {
-    //window.document.body.style.backgroundColor = 'white';
-    // ion.sound.play("shake-4");
-  }
+  // if (value > 400) {
+  //   //window.document.body.style.backgroundColor = 'white';
+  //   // ion.sound.play("shake-4");
+  // }
 
-  if (value > 150 && value < 400)  {
-    // window.document.body.style.backgroundColor = 'yellow';
-    ion.sound.play("shake-1");
-    $maraca.addClass("shake-stop");
-    $maraca.removeClass("shake-slow");
-  }
+  // if (value > 150 && value < 400)  {
+  //   // window.document.body.style.backgroundColor = 'yellow';
+  //   ion.sound.play("shake-1");
+  //   $maraca.addClass("shake-stop");
+  //   $maraca.removeClass("shake-slow");
+  // }
 
   // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
 
