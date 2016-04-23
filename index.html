@@ -11,7 +11,8 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="home">Add me to your home screen</div>
+    <div id="desktop">Use a mobile phone!</div>
+    <div id="home">Add me to your home screen!</div>
     <div id="splash">Touch to start!</div>
     <div id="maraca" class="shake-stop">Maraca</div>
   </div>
@@ -23,6 +24,12 @@
     $(document).ready(function() {
       if (("standalone" in window.navigator) && window.navigator.standalone){
         $('#home').css('display', 'none');
+        $('#desktop').css('display', 'none');
+      }
+      
+      if (("standalone" in window.navigator) && !window.navigator.standalone){
+        $('#home').css('display', 'none');
+        $('#desktop').css('display', 'none');
       }
     });
   </script>
