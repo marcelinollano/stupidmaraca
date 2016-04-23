@@ -44,6 +44,7 @@ function ping() {
   var value = t2 - t1;
 
   window.clearTimeout(mainLoopID);
+  mainLoopID = undefined;
 
   if (value > 400) {
     //window.document.body.style.backgroundColor = 'white';
