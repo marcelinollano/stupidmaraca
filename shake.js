@@ -34,7 +34,7 @@ function ping() {
   t1 = t2;
 };
 
-activateMainLoop();
+//activateMainLoop();
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
   var sensitivity = 30;
