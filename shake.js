@@ -32,6 +32,7 @@ function play(fileName){
 }
 
 function activateMainLoop(){
+  $('#splash').hide();
   $maraca.removeClass("shake-stop");
   $maraca.addClass("shake-slow");
   mainLoopID = setInterval(function () {
