@@ -1,6 +1,7 @@
 var t1 = new Date().getTime();
 var mainLoopID;
 var audioCache = {};
+var $maraca = $('#maraca');
 
 ion.sound({
   sounds: [
@@ -34,14 +35,14 @@ function ping() {
   var t2 = new Date().getTime();
   var value = t2 - t1;
 
+  window.clearTimeout(mainLoopID);
+
   if (value > 400) {
     //window.document.body.style.backgroundColor = 'white';
     ion.sound.play("shake-4");
-    activateMainLoop();
   }
 
   if (value > 150 && value < 400)  {
-    window.clearTimeout(mainLoopID);
     // window.document.body.style.backgroundColor = 'yellow';
     ion.sound.play("shake-1");
   }
