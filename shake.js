@@ -2,6 +2,20 @@ var t1 = new Date().getTime();
 var mainLoopID;
 var audioCache = {};
 
+ion.sound({
+  sounds: [
+    {
+      name: "shake-1"
+    },
+    {
+      name: "shake-4"
+    },
+  ],
+  volume: 0.5,
+  path: "assets/",
+  preload: true
+});
+
 function play(fileName){
   if(audioCache[fileName] === undefined){
     audioCache[fileName] = new Audio('/assets/' + fileName + '.mp3');
@@ -12,7 +26,7 @@ function play(fileName){
 function activateMainLoop(){
   mainLoopID = setInterval(function () {
     window.document.body.style.backgroundColor = 'white';
-    play('shake-4');
+    ion.sound.play("shake-4");
   }, 100);
 }
 
@@ -22,14 +36,14 @@ function ping() {
 
   if (value > 400) {
     //window.document.body.style.backgroundColor = 'white';
-    play('shake-4');
+    ion.sound.play("shake-4");
     activateMainLoop();
   }
 
   if (value > 150 && value < 400)  {
     window.clearTimeout(mainLoopID);
     // window.document.body.style.backgroundColor = 'yellow';
-    play('shake-1');
+    ion.sound.play("shake-1");
   }
 
   // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
