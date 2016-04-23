@@ -21,7 +21,7 @@ setInterval(function () {
   if(mainLoopID === 0){
     activateMainLoop();
   }
-}, 1500);
+}, 700);
 
 function play(fileName){
   if(audioCache[fileName] === undefined){
