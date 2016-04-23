@@ -15,6 +15,7 @@ body {
 }
 
 #maraca {
+  cursor: pointer;
   width: 130px;
   height: 360px;
   text-indent: 100%;
