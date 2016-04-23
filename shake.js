@@ -2,6 +2,7 @@ var t1 = new Date().getTime();
 var mainLoopID;
 var audioCache = {};
 var $maraca = $('#maraca');
+var colors = ['#FF6000' , '#A951EC' , '#C9FE3E' , '#200274' , '#6DEDF7'];
 
 ion.sound({
   sounds: [
@@ -35,7 +36,8 @@ function activateMainLoop(){
   $maraca.removeClass("shake-stop");
   $maraca.addClass("shake-slow");
   mainLoopID = setInterval(function () {
-    //window.document.body.style.backgroundColor = 'white';
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    window.document.body.style.backgroundColor = color;
     ion.sound.play("shake-4");
   }, 200);
 }
