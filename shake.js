@@ -21,18 +21,18 @@ function ping() {
   var value = t2 - t1;
 
   if (value > 400) {
-    window.document.body.style.backgroundColor = 'white';
+    //window.document.body.style.backgroundColor = 'white';
     play('shake-4');
     activateMainLoop();
   }
 
   if (value > 150 && value < 400)  {
     window.clearTimeout(mainLoopID);
-    window.document.body.style.backgroundColor = 'yellow';
+    // window.document.body.style.backgroundColor = 'yellow';
     play('shake-1');
   }
 
-  if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
+  // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
 
   t1 = t2;
 };
