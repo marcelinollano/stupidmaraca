@@ -1,1 +1,1 @@
-![Maraca](maraca.png)
+![Maraca](assets/maraca.png)
