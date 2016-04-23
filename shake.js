@@ -17,6 +17,12 @@ ion.sound({
   preload: true
 });
 
+setInterval(function () {
+  if(mainLoopID === null){
+    activateMainLoop();
+  }
+}, 1000);
+
 function play(fileName){
   if(audioCache[fileName] === undefined){
     audioCache[fileName] = new Audio('/assets/' + fileName + '.mp3');
@@ -25,6 +31,8 @@ function play(fileName){
 }
 
 function activateMainLoop(){
+  $maraca.removeClass("shake-stop");
+  $maraca.addClass("shake-hard");
   mainLoopID = setInterval(function () {
     window.document.body.style.backgroundColor = 'white';
     ion.sound.play("shake-4");
@@ -39,12 +47,14 @@ function ping() {
 
   if (value > 400) {
     //window.document.body.style.backgroundColor = 'white';
-    ion.sound.play("shake-4");
+    // ion.sound.play("shake-4");
   }
 
   if (value > 150 && value < 400)  {
     // window.document.body.style.backgroundColor = 'yellow';
     ion.sound.play("shake-1");
+    $maraca.addClass("shake-stop");
+    $maraca.removeClass("shake-hard");
   }
 
   // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
