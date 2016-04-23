@@ -1,1 +1,3 @@
-![Maraca](assets/demo.png)
+### 👉 [stupidmaraca.lol](http://stupidmaraca.lol)
+
+![Screen Shot](assets/demo.png)
