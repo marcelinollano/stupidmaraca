@@ -11,7 +11,6 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="desktop">Use a mobile phone!</div>
     <div id="home">Add me to your home screen!</div>
     <div id="splash">Touch to start!</div>
     <div id="maraca" class="shake-stop">Maraca</div>
@@ -23,11 +22,6 @@
   <script type="text/javascript">
     $(document).ready(function() {
       if (("standalone" in window.navigator) && window.navigator.standalone){
-        $('#desktop').css('display', 'none');
-        $('#home').css('display', 'none');
-      }
-      
-      if (!("standalone" in window.navigator) || !window.navigator.standalone){
         $('#home').css('display', 'none');
       }
     });
