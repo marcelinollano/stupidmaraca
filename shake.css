@@ -1,5 +1,5 @@
-body { 
-  background: #00b2aa;
+body {
+  background: #D1619B;
 }
 
 #wrapper {
@@ -14,6 +14,27 @@ body {
   bottom: 0;
 }
 
+#splash {
+  background-image: url(assets/splash.png);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #609DE4;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 #maraca {
   cursor: pointer;
   width: 130px;
@@ -23,7 +44,6 @@ body {
   overflow: hidden;
   background-image: url(assets/maraca.png);
   background-size: 100%;
-  content: '';
 }
 
 /* Shake Stop */
