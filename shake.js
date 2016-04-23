@@ -1,14 +1,12 @@
-document.getElementById("maraca").innerHTML=
-"<embed src='/assets/shake-1.mp3' hidden=true autostart=true loop=false>";
-
-
-
 var t1 = new Date().getTime();
 var mainLoopID;
+var audioCache = {};
 
 function play(fileName){
-  var audio = new Audio('/assets/' + fileName + '.mp3');
-  audio.play();
+  if(audioCache[fileName] === undefined){
+    audioCache[fileName] = new Audio('/assets/' + fileName + '.mp3');
+  }
+  audioCache[fileName].play();
 }
 
 function activateMainLoop(){
@@ -63,35 +61,3 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
     z2 = z1;
   }, 40);
 };
-
-
-
-$.mbAudio.sounds = {
-  backgroundSprite: {
-    id    : "backgroundSprite",
-    mp3   : "assets/shake-4.mp3",
-      //example of sprite
-    sprite: {
-      intro : {id: "intro", start: 0, end: 2000, loop: true}
-    }
-  }
-};
-
-function audioIsReady() {
-  setTimeout(function () {
-    $('#buttons').fadeIn();
-    $("#loading").hide();
-
-    console.log('here');
-
-    $.mbAudio.play('backgroundSprite', 'intro');
-  }, 1000);
-}
-
-$(document).on("initAudio", function () {
-  audioIsReady();
-
-  $('#start').hide();
-  $("#loading").show();
-});
-
