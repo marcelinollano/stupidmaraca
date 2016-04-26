@@ -6,7 +6,7 @@ This was a project made for the [StupidHackathon 2016](http://www.stupidhackatho
 
 ## Demo
 
-You can't grasp this high-concept? [Here is a video](assets/demo.mp4)
+You can't grasp this high-concept? [Here is a video](http://stupidmaraca.lol/assets/demo.mp4)
 
 ![Demo](assets/demo.gif)
 
