@@ -2,7 +2,7 @@
 
 A maraca for your mobile phone, only in reverse.
 
-This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es). Check the project at [stupidmaraca.lol](http://stupidmaraca.lol).
+This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es). See it live at [stupidmaraca.lol](http://stupidmaraca.lol).
 
 ## Demo
 
