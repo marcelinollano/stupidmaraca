@@ -24,7 +24,7 @@ You can't grasp this high-concept? [Here is a video](assets/demo.mp4)
 **A:** It was [@denegro](https://twitter.com/denegro)'s original idea and he also did the cute graphics. [@ferblape](https://twitter.com/ferblape) and [@marcelinollano](https://twitter.com/marcelinollano) implemented the thing, mostly copying from Stack Overflow. [@kekoponte](https://twitter.com/kekoponte) and [@coquedesigns](https://twitter.com/coquedesigns) did testing and emotional support and.
 
 **Q: My maraca does not sound, why?**  
-**A:** You must add it to your home screen (see step 2 in the `Setup` section). Mobile browsers limit the access to the features of the device. The audio API only works if the webapp is installed on the home screen.
+**A:** You must add it to your home screen (see step 2 in the `Setup` section). Mobile browsers limit the access to features of the device. The HTML5 Audio API only works if the webapp is installed on the home screen, or so it seems.
 
 **Q: It this great product free?**  
 **A:** Yep, but we may add some in-app purchases to unlock more maracas.
