@@ -1,18 +1,11 @@
-var t1 = new Date().getTime();
 var mainLoopID;
 var audioCache = {};
 var $maraca = $('#maraca');
-var colors = ['#FF6000' , '#A951EC' , '#C9FE3E' , '#200274' , '#6DEDF7'];
+var colors = ['#ff6000' , '#a951ec' , '#c9fe3e' , '#200274' , '#6dedf7'];
+var t1 = new Date().getTime();
 
 ion.sound({
-  sounds: [
-    {
-      name: "shake-1"
-    },
-    {
-      name: "shake-4"
-    },
-  ],
+  sounds: [{name: "shake"}],
   volume: 0.5,
   path: "assets/",
   preload: true
@@ -38,35 +31,19 @@ function activateMainLoop(){
   mainLoopID = setInterval(function () {
     var color = colors[Math.floor(Math.random() * colors.length)];
     window.document.body.style.backgroundColor = color;
-    ion.sound.play("shake-4");
+    ion.sound.play("shake");
   }, 200);
 }
 
 function ping() {
   var t2 = new Date().getTime();
   var value = t2 - t1;
-
+  $maraca.removeClass("shake-slow");
+  $maraca.addClass("shake-stop");
   window.clearTimeout(mainLoopID);
   mainLoopID = 0;
-
-  // if (value > 400) {
-  //   //window.document.body.style.backgroundColor = 'white';
-  //   // ion.sound.play("shake-4");
-  // }
-
-  // if (value > 150 && value < 400)  {
-  //   // window.document.body.style.backgroundColor = 'yellow';
-  //   ion.sound.play("shake-1");
-  //   $maraca.addClass("shake-stop");
-  //   $maraca.removeClass("shake-slow");
-  // }
-
-  // if (value < 150) { window.document.body.style.backgroundColor = 'red'; }
-
   t1 = t2;
 };
-
-//activateMainLoop();
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
   var sensitivity = 30;
@@ -90,3 +67,12 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
     z2 = z1;
   }, 40);
 };
+
+if ("ontouchstart" in window) {
+  $('#desktop-browser').css('display', 'none'); 
+}
+
+if (("standalone" in window.navigator) && window.navigator.standalone){
+  $('#desktop-browser').css('display', 'none'); 
+  $('#mobile-browser').css('display', 'none'); 
+}
