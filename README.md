@@ -2,17 +2,17 @@
 
 A maraca for your mobile phone, only in reverse.
 
-This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es) and you can [see it live here](https://marcelinollano.github.io/stupid-maraca/).
+This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es) and you can [see it live here](https://marcelinollano.github.io/stupid-maraca).
 
 ## Demo
 
-You can't grasp this high-concept? [Here is a video](http://stupidmaraca.lol/assets/demo.mp4)
+You can't grasp this high-concept? [Here is a video](https://marcelinollano.github.io/stupid-maraca/assets/demo.mp4)
 
 ![Demo](assets/demo.gif)
 
 ## Setup
 
-1. Visit [stupidmaraca.lol](http://stupidmaraca.lol) from your mobile phone.
+1. Open the [stupid maraca](https://marcelinollano.github.io/stupid-maraca) on your mobile phone.
 2. Add to your home screen: `Status Bar > Add to Home Screen`.
 3. Disable silence and turn the volume up!
 4. Tap the icon of `Stupid Maraca` to launch it.
