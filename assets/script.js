@@ -7,7 +7,7 @@ var t1 = new Date().getTime();
 ion.sound({
   sounds: [{name: "shake"}],
   volume: 0.5,
-  path: "/assets/",
+  path: "assets/",
   preload: true
 });
 
