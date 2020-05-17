@@ -8,13 +8,13 @@ This was a project made for the [StupidHackathon 2016](http://www.stupidhackatho
 
 **Note:** This is an old project and does not work in iOS > 13.
 
-[🎦 Here is a video on how this works](https://marcelinollano.github.io/stupid-maraca/assets/demo.mp4)
+[🎦 Here is a video on how this works](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
 ![Demo](assets/demo.gif)
 
 ## Setup
 
-1. Open the [stupid maraca](https://marcelinollano.github.io/stupid-maraca) on your mobile phone.
+1. Open the [stupid maraca](https://marcelinollano.github.io/stupidmaraca) on your mobile phone.
 2. Add to your home screen: `Status Bar > Add to Home Screen`.
 3. Disable silence and turn the volume up!
 4. Tap the icon of `Stupid Maraca` to launch it.
