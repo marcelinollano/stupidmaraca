@@ -10,7 +10,7 @@ This was a project made for the [StupidHackathon 2016](http://www.stupidhackatho
 
 [🎦 Here is a video on how this works](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
-![Demo](assets/demo.gif)
+[![Demo](assets/demo.gif)](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
 ## Setup
 
