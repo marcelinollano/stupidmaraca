@@ -4,23 +4,21 @@ A maraca for your mobile phone, only in reverse.
 
 This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es).
 
-## Demo
-
-**Note:** This is an old project and does not work in iOS > 13.
-
-[👀 See it live here](http://marcelinollano.github.io/stupidmaraca/)
+## Video demo
 
 [🎦 Here is a video](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
 [![Demo](assets/demo.gif)](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
-## Setup
+## Live demo
+
+**Note:** This is an old project and does not work in iOS > 13.
 
 1. Open the [stupid maraca](https://marcelinollano.github.io/stupidmaraca) on your mobile phone.
 2. Add to your home screen: `Status Bar > Add to Home Screen`.
 3. Disable silence and turn the volume up!
 4. Tap the icon of `Stupid Maraca` to launch it.
-4. Chk chk chk, shake the device!
+5. Chk chk chk, shake the device!
 
 ## FAQ
 
