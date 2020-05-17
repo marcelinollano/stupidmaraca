@@ -2,13 +2,15 @@
 
 A maraca for your mobile phone, only in reverse.
 
-This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es) and you can [see it live here](http://marcelinollano.github.io/stupidmaraca/).
+This was a project made for the [StupidHackathon 2016](http://www.stupidhackathon.es).
 
 ## Demo
 
 **Note:** This is an old project and does not work in iOS > 13.
 
-[🎦 Here is a video on how this works](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
+[👀 See it live here](http://marcelinollano.github.io/stupidmaraca/)
+
+[🎦 Here is a video](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
 [![Demo](assets/demo.gif)](https://marcelinollano.github.io/stupidmaraca/assets/demo.mp4)
 
