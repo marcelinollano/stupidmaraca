@@ -6,6 +6,8 @@ This was a project made for the [StupidHackathon 2016](http://www.stupidhackatho
 
 ## Demo
 
+**Note:** This is an old project and does not work in iOS > 13, you can see the video.
+
 You can't grasp this high-concept? [Here is a video](https://marcelinollano.github.io/stupid-maraca/assets/demo.mp4)
 
 ![Demo](assets/demo.gif)
